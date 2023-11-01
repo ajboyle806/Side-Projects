@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  overflow: hidden;
+  transition: all 300ms ease-in-out;
+}
+
+.background {
+  /* background-image: linear-gradient(to bottom right, #f77d8188, #4c2fb488); */
+  background-color: black;
+  background-color: white;
+}
+
+.app-course-page {
+  background-image: url("main_background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 484px;
+  height: 100vh;
+  margin: auto;
+  height: calc(100vh);
+  border-color: black;
+  border-width: 16px;
+  border-style: solid;
+  border-radius: 3rem;
+  overflow: auto;
+}
+
+.app-course-page::-webkit-scrollbar {
+  display: none;
+}
+
+.course-page-head {
+  display: flex;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.profile-logo {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+}
+
+#course-page-top-right-logo {
+  margin-left: 11.25rem;
+  margin-top: 0.5rem;
+}
+
+.course-page-head h2 {
+  font-weight: 400;
+  color: #382b65;
+  width: 10rem;
+}
+
+#course-page-timer {
+  color: #382b65;
+  opacity: 0.75;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  font-size: 18px;
+}
+
+#course-page-ranking {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  width: 388px;
+  background-color: #f1eff6;
+  height: 5rem;
+  border-radius: 1rem;
+  display: flex;
+}
+
+.course-page-box-logo {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 0.75rem;
+}
+
+#course-page-ranking-text {
+  font-size: 12px;
+  margin-top: 1rem;
+  color: #382b65;
+  width: 14rem;
+}
+
+#course-page-ranking-text-score {
+  opacity: 0.75;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#course-page-ranking-rank {
+  width: 4rem;
+  text-align: right;
+  color: #382b65;
+  font-size: 1.5rem;
+  margin-top: 1.3rem;
+}
+
+#course-page-search {
+  margin-left: 2rem;
+  width: 386px;
+  margin-top: 16px;
+  box-shadow: 0px 0px 5px #d5cee6;
+  border-radius: 0rem;
+  border: none;
+}
+
+#course-page-progress {
+  margin-left: 2rem;
+  font-weight: 700;
+  width: 200px;
+}
+
+#course-page-challenge {
+  color: #382b65;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.course-page-course {
+  margin-left: 2rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+#course-page-toggle-div {
+  display: flex;
+  margin-top: 1rem;
+  color: #382b65;
+  font-size: 18px;
+}
+
+#course-page-toggle {
+  text-align: right;
+  width: 186px;
+  cursor: pointer;
+}
+
+.course-page-challenges {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  width: 388px;
+  background-color: #ffffff;
+  height: 5rem;
+  border-radius: 1rem;
+  display: flex;
+  box-shadow: 0px 0px 5px #d5cee655;
+  color: #382b65;
+}
+
+#course-page-challenge-text {
+  font-size: 1.1rem;
+  margin-top: 1.65rem;
+  width: 200px;
+}
+
+#course-page-challenge-points {
+  font-size: 1.25rem;
+  margin-top: 1.6rem;
+  text-align: right;
+  width: 94px;
+}
+
+.course-page-challenge-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.75rem;
+  margin-top: 1.25rem;
+  margin-left: 1rem;
+}
+
+.bottom-space {
+  height: 6.5rem;
+  width: 2rem;
+}
+
+.navbar {
+  position: absolute;
+  width: 452px;
+  height: 5rem;
+  bottom: 1rem;
+  border-bottom-left-radius: 1.875rem;
+  border-bottom-right-radius: 1.875rem;
+  background-color: white;
+  box-shadow: 0px 0px 10px #ccb4d899;
+}
+
+.navbar-images {
+  width: 338px;
+  margin: auto;
+  height: 80px;
+  margin-top: 17px;
+}
+
+.navbar-images img {
+  height: 45px;
+  margin-left: 1.0625rem;
+  margin-right: 1.0625rem;
+  cursor: pointer;
+}
+
+.ranking-container-courses {
+  width: 388px;
+  height: 67px;
+  margin-left: 32px;
+  background-color: #efeef9;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+
+.ranking-container-score-courses {
+  margin-left: calc(-10rem - 26px);
+  width: 11.5rem;
+  text-align: right;
+  color: #382b65;
+  font-size: 17px;
+  margin-top: 22px;
+  transition: opacity 200ms ease-in-out;
+}
+
+.original-bold {
+  color: #382b65;
+}

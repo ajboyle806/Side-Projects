@@ -1,0 +1,107 @@
+#assistant-header {
+  width: 100%;
+  height: 9.25rem;
+  background-image: url("assistant-head.png");
+}
+
+.app-page-overflow {
+  background-image: url("main_background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 452px;
+  height: 100vh;
+  margin: auto;
+  height: calc(100vh - 2rem);
+  border-color: black;
+  border-width: 16px;
+  border-style: solid;
+  border-radius: 3rem;
+  overflow: scroll;
+}
+
+.app-page-overflow::-webkit-scrollbar {
+  display: none;
+}
+
+#chats {
+  margin-top: 0.5rem;
+}
+
+.chat-container {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  width: calc(100% - 4rem);
+  min-height: 3rem;
+}
+
+.chat-profile-pic {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgb(139, 91, 170);
+}
+
+.chat-text {
+  width: 20.25rem;
+  margin-left: 18px;
+  margin-top: 4px;
+  color: #382b65;
+  font-weight: 500;
+  opacity: 1;
+}
+
+.line {
+  margin-top: 1rem;
+  width: 388px;
+  height: 0.125rem;
+  background-color: #bcb9d3;
+  opacity: 1;
+  margin-left: 2rem;
+}
+
+#chat-bottom-spacer {
+  height: 10.5rem;
+  width: 1rem;
+}
+
+.message-input-div {
+  position: absolute;
+  width: 452px;
+  height: 4rem;
+  bottom: 6rem;
+  border-width: 0;
+  background-color: #fcfbff;
+  box-shadow: 0px 0px 10px #ccb4d899;
+  display: flex;
+
+}
+
+.message-input {
+  background-color: #fcfbff00;
+  border-width: 0px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #382b65;
+  opacity: 0.9;
+  margin-top: -0.25rem;
+  margin-left: 4.5rem;
+  width: 262px;
+}
+
+.message-input:focus {
+  outline: 0;
+}
+
+
+.message-input-div::placeholder {
+  opacity: 0.9;
+}
+
+.send-button {
+  height: 1rem;
+  margin-top: 1.425rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+

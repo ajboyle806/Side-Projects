@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  overflow: hidden;
+  transition: all 300ms ease-in-out;
+}
+
+.app-page-profile {
+  background-image: url("main_background.png");
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 452px;
+  height: 100vh;
+  margin: auto;
+  height: calc(100vh - 2rem);
+  border-color: black;
+  border-width: 16px;
+  border-style: solid;
+  border-radius: 3rem;
+  overflow: auto;
+}
+
+.app-page-profile::-webkit-scrollbar {
+  display: none;
+}
+
+#profile-header {
+  margin-top: 2.8rem;
+  margin-left: 2rem;
+  width: 388px;
+  height: 4rem;
+  display: flex;
+}
+
+#profile-points {
+  height: 1.5rem;
+  background-image: linear-gradient(to bottom, #af74a8, #dd8399);
+  border-radius: 0.25rem;
+}
+
+#profile-points p {
+  color: white;
+  font-weight: 500;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+#profile-edit {
+  height: 24px;
+  margin-left: auto;
+}
+
+#profile-picture-main {
+  width: 6.25rem;
+  height: 6.25rem;
+  margin-top: -1.5rem;
+  border-radius: 3.125rem;
+  margin-left: calc(50% - 3.125rem);
+}
+
+#profile-page-name {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+  color: #382b65;
+}
+
+#profile-page-email {
+  width: 100%;
+  text-align: center;
+  margin-top: 0.375rem;
+  color: #382b65;
+  font-size: 0.9325rem;
+}
+
+.profile-line {
+  width: 100%;
+  height: 0.0625rem;
+  background-color: #bfa1cc;
+}
+
+#top-line {
+  margin-top: 2rem;
+}
+
+#profile-progress-back {
+  width: calc(100% - 4rem);
+  height: 2rem;
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+  background-color: #efeef9;
+}
+
+#profile-progress-front {
+  width: 5rem;
+  height: 2rem;
+  background-image: linear-gradient(to right, #b3699b, #e2788a);
+  display: flex;
+}
+
+#progress-bar-text {
+  display: flex;
+  margin-top: -31px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+#current-level-bar-text {
+  font-weight: 500;
+  color: #efeef9;
+  font-size: 1.25rem;
+  margin-left: 1rem;
+  width: 5rem;
+}
+
+#next-level-bar-text {
+  /* position: fixed; */
+  font-weight: 500;
+  color: #382b65;
+  font-size: 1.25rem;
+  margin-right: 1rem;
+  width: 356px;
+  text-align: right;
+}
+
+#profile-bar-progress {
+  margin-left: 2rem;
+  color: #382b65;
+  margin-top: 0.5rem;
+  font-size: 0.9325rem;
+}
+
+#middle-line {
+  margin-top: 1.25rem;
+}
+
+#calendar-head {
+  display: flex;
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+  color: #382b65;
+}
+
+#calendar-head-month {
+  font-size: 1.25rem;
+  /* margin-left: 1.25rem; */
+  font-weight: 500;
+  width: 200px;
+}
+
+#calendar-head-left {
+  margin-left: 100px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1.25rem;
+}
+
+#calendar-head-right {
+  /* position: absolute; */
+  margin-left: 43px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1.25rem;
+}
+
+#calendar {
+  margin-left: 1.5rem;
+  width: 25.25rem;
+  display: grid;
+  grid-template-columns: 58px 58px 57px 58px 57px 58px 58px;
+}
+
+.calendar-box {
+  text-align: center;
+  font-size: 1.125rem;
+  margin-top: 1rem;
+  /* background-color: red; */
+  border-radius: 1rem;
+  /* height: 2rem; */
+}
+
+.day-of-week {
+  opacity: 0.5;
+  font-size: 1rem;
+}
+
+.calendar-circle {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  margin: auto;
+  transition: none;
+  padding-top: 0;
+}
+
+.calendar-circle p {
+  color: #382b65;
+  margin-top: 7px;
+}
+
+.low-points {
+  background-color: #ee826f99;
+}
+
+.med-points {
+  background-color: #85969f99;
+}
+
+.high-points {
+  background-color: #f3a24e99;
+}
+
+.low-points {
+  background-color: #da758e44;
+}
+
+.med-points {
+  background-color: #da758e99;
+}
+
+.high-points {
+  background-color: #da758ecc;
+}
+
+.inactive {
+  opacity: 0.4;
+}
+
+.stats-header {
+  font-size: 18px;
+  margin-left: 2rem;
+  font-weight: 700;
+  width: 200px;
+  color: #382b65;
+  margin-top: 1rem;
+}
+
+#badges-grid {
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  grid-gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#badges-grid div {
+  height: 10rem;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0px 0px 0.5rem #dddafd;
+}
+
+.log-out {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  width: calc(452px - 4rem);
+  height: 2rem;
+  background-color: #f0acb7;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.log-out h2 {
+  color: white;
+  text-align: center;
+  font-size: 1.125rem;
+  margin-top: 0.125rem;
+}
+
+.stats-div {
+  display: flex;
+  overflow: visible;
+}
+
+.stats-div div {
+  background-color: white;
+  width: 186px;
+  height: 5rem;
+  margin-right: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 1rem #dddafd88;
+}
