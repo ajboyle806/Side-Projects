@@ -53,7 +53,7 @@ training_data = cell2table(training_data,...
 %%
 
 classNames = "label_name";
-% anchorBoxes variable should be assigned a 2 x 5 array with format
+% anchorBoxes variable assigned a 2 x 5 array with format
 % [length width height zcenter yaw; length width height zcenter yaw]
 anchorBoxes = {[]};
 pcRange = [0,69.12,-39.68,39.68,-5,5];
@@ -80,7 +80,7 @@ options = trainingOptions("adam",...
 
 %%
 
-% assign index of point cloud you wish to perform detection on to num
+% assign index of point cloud performing detection on to num
 num = 1;
 % assign threshold to threshold
 threshold = 0.45;

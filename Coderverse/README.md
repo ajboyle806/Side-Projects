@@ -1,5 +1,12 @@
 This folder contains code from a stable version of Coderverse, the educational youth coding app showcased within my portfolio. 
 
+Notable Code Snippet:
+client/src/Challenge.js Lines 857-922
+
+This code snippet is executed when a daily challenge module like the one included is completed. As can be seen, the snippet first defines the present date as a variable (858-864) and then marks the daily challenge’s completion in the user object (865-868). Following this, the user object adds the points earned, accounting for any streak bonus if there is one (869-871). In addition, the points are recorded for the current date, such that the user’s streak and activity calendar are updated on the profile page (873-890). After all of this, local changes are committed to the app’s state (891) and then to the backend through three flask functions that update the user’s profile as well as rankings within the database (892, 905, and 916).
+
+I chose this snippet as it demonstrates connections between the front end and back-end as well as the means through which data is handled within the app (which is secured in accounts with hashed passwords) to ensure consistency between activities, profile information, and rankings.
+
 Notable Files:
 
 /client/src/App.js - Log-in system<br>

@@ -889,7 +889,6 @@ function Learn() {
       }
     }
     setUser([...user]);
-    console.log(user[13]);
     fetch("/update_profile", {
       method: "POST",
       headers: {
