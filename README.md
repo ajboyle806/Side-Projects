@@ -11,4 +11,4 @@ Most notable IoT Projects in Github:
 
 Less significant projects showcased within my video are kept within the /Extra Projects in Video folder
 
-Note: This GitHub was updated after November 1st as certain README.md files were being pushed along with other minor changes as I anticipated.
+Note: This GitHub was updated after November 1st as certain README.md files were not actually pushed to this repository as I anticipated, for the most updated local version had not been pushed.
