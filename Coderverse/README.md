@@ -1,11 +1,6 @@
-This folder contains code from a stable version of Coderverse, the educational youth coding app showcased within my portfolio. 
+This folder contains code from a (past) stable version of Coderverse. The code is a tad messy but is being reorganized.
 
-Notable Code Snippet:
-client/src/Challenge.js Lines 857-922
-
-This code snippet is executed when a daily challenge module like the one included is completed. As can be seen, the snippet first defines the present date as a variable (858-864) and then marks the daily challenge’s completion in the user object (865-868). Following this, the user object adds the points earned, accounting for any streak bonus if there is one (869-871). In addition, the points are recorded for the current date, such that the user’s streak and activity calendar are updated on the profile page (873-890). After all of this, local changes are committed to the app’s state (891) and then to the backend through three flask functions that update the user’s profile as well as rankings within the database (892, 905, and 916).
-
-I chose this snippet as it demonstrates connections between the front end and back-end as well as the means through which data is handled within the app (which is secured in accounts with hashed passwords) to ensure consistency between activities, profile information, and rankings.
+Coderverse is an interactive youth coding education app inspired by struggles that I faced while first learning how to program. In creating it, I felt that most coding apps for kids were either overcomplicated or oversimplified to the point of ineffectiveness, eagerly seeking to address a need I saw for an app that engagingly taught pre-secondary students actual coding languages. Presently it comprises a React front-end connected via Flask to a Python back-end and PostgreSQL database, though I am working to integrate the app with AWS to enable it to scale. I am hoping to create many more lessons and improve upon the functionality of the app's AI assistant system over the next few months
 
 Notable Files:
 
@@ -20,5 +15,3 @@ Notable Files:
 /client/src/Rankings.js - Leaderboard page<br>
 /client/src/Profile.js - Profile page<br>
 /flask-server/server.py - Back-end script
-
-Note: I am continuing to work on implementing cloud connectivity through AWS and procedurally creating additional lessons/activities on a local development version of this project (presently unstable/in progress)
